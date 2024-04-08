@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .school .content-container {
+        display: flex;
+        /* Removed justify-content: space-between; */
+        align-items: center; /* Added this line to center the image */
+    }
+      
+    .school .text-content {
+        /* Adjust the width as needed */
+        width: 50%;
+    }
+      
+    .school .image-content {
+        /* Adjust the width as needed */
+        width: 50%;
+        text-align: center; /* Center the image within its container */
+    }
+      
+    /* For screens smaller than 600px, stack the text content and image content vertically */
+    @media (max-width: 600px) {
+        .school .content-container {
+            flex-direction: column;
+        }
+      
+        .school .text-content, .school .image-content {
+            width: 100%;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+    <br>
+    <br>
+    <br>
+    <div class="school">
+
+        <div class="content-container">
+            <div class="image-content">
+                <img src="15second.png" alt="Description of image">
+              </div>
+          <div class="text-content">
+            <h2>
+                Position your bed correctly
+            </h2>
+            <p>
+                Stand at the end of your bed facing to bedhead take the reading from your compass. 
+            </p>
+            <p>
+                Sleep with your head pointing to any of the four good direction in your Life Gua.
+            </p>
+          </div>
+
+        </div>
+      </div>
+</body>
+</html>
